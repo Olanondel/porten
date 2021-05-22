@@ -491,6 +491,8 @@ input, button {
 
     .img_block {
         width: 100%;
+        min-height: 730px;
+        order: 2;
     }
 
     .collection_block {
