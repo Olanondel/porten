@@ -180,6 +180,11 @@ input, button {
     .bottom_line {
         padding-bottom: 10px;
     }
+
+    .nav .nav_item {
+        width: 100%;
+        display: inline-block;
+    }
 }
 
 @media only screen and (min-width : 260px)  {
