@@ -179,6 +179,9 @@ input, button {
 
 @media only screen and (min-width : 260px)  {
 
+    .nav {
+    }
+
     .logo {
         display: flex;
         justify-content: center;
@@ -188,13 +191,15 @@ input, button {
     .nav li,
     .helpNav li {
         text-align: center;
-        padding: 10px 0;
     }
 
     .nav li a,
     .helpNav li a {
         font-size: 18px;
         color: #969696;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 10px;
     }
 
     .helpNav {
@@ -205,15 +210,20 @@ input, button {
     .helpNav li {
         width: 60px;
         height: 40px;
-        margin: 5px 10px;
     }
 
-    .nav li:hover,
-    .helpNav li:hover,
-    .nav li:hover a{
+    nav li a:hover {
         background: #1F1F1F;
         cursor: pointer;
         color: #fff;
+    }
+
+    .navCard:hover {
+        background: #1F1F1F url('../img/icons/shop.png') center no-repeat;
+    }
+
+    .navSearch:hover {
+        background: #1F1F1F url('../img/icons/search.png') center no-repeat;
     }
 
     .navCard,
@@ -245,7 +255,7 @@ input, button {
     }
 
     .nav li {
-        padding: 0 20px;
+        /*padding: 0 20px;*/
         display: flex;
         align-items: center;
     }
@@ -281,6 +291,13 @@ input, button {
         height: 80px;
     }
 
+    .nav li a {
+        height: 80px;
+        display: inline-block;
+        line-height: 80px;
+        padding: 0 20px;
+    }
+
     .helpNav li a,
     .helpNav li {
         height: 80px;
@@ -293,7 +310,7 @@ input, button {
 .porten_screen {
     background: url('../img/first-screen.jpg') center no-repeat;
     background-size: cover;
-    padding: 8% 15px 0 15px;
+    padding: 8% 15px 6% 15px;
 }
 
 .porten {
@@ -311,7 +328,6 @@ input, button {
     font-size: 16px;
     line-height: 24px;
     text-transform: uppercase;
-    padding-bottom: 8%;
 }
 
 /* SECOND SCREEN */
@@ -341,6 +357,18 @@ input, button {
     padding-top: 70%;
     padding-bottom: 15%;
 
+}
+
+@media only screen and (max-width : 899px) {
+    .card_item,
+    .brand_item {
+        text-align: center;
+    }
+
+    .card_item img,
+    .brand_item img {
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (max-width : 600px) {
@@ -373,7 +401,6 @@ input, button {
 }
 
 .card_item {
-    max-width: 260px;
     margin: 0 5px;
 }
 
@@ -454,6 +481,10 @@ input, button {
 }
 
 @media only screen and (max-width : 960px) {
+    .collection_block .link {
+        margin-bottom: 40px;
+    }
+
     .third_screen {
         flex-direction: column;
     }
@@ -507,16 +538,21 @@ input, button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .our_brands .wrapper .brand_item {
-    margin: 0 10px 25px 10px;
+
+}
+
+.brand_list img {
+    max-width: 255px;
+    height: auto;
 }
 
 @media only screen and (max-width : 1100px) {
     .our_brands .wrapper .brand_list {
-
+        flex-wrap: wrap;
     }
 }
 
