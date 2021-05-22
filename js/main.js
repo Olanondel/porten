@@ -28,6 +28,12 @@ $(function () {
         },
       },
       {
+        breakpoint: 760,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
@@ -59,6 +65,12 @@ $(function () {
         },
       },
       {
+        breakpoint: 760,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
@@ -84,9 +96,15 @@ $(function () {
         settings: 'unslick',
       },
       {
-        breakpoint: 900,
+        breakpoint: 960,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 760,
+        settings: {
+          slidesToShow: 2,
         },
       },
       {
