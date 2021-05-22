@@ -174,9 +174,13 @@ input, button {
 .bottom_line {
     min-height: 80px;
     background: #0F0F0F;
-    padding-bottom: 10px;
 }
 
+@media only screen and (max-width : 600px)  {
+    .bottom_line {
+        padding-bottom: 10px;
+    }
+}
 
 @media only screen and (min-width : 260px)  {
 
