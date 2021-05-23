@@ -11,6 +11,7 @@ body {
 a {
     color: #fff;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .wrapper {
@@ -283,7 +284,7 @@ input, button {
 /* OUR BRANDS */
 .our_brands {
     background: #0F0F0F;
-    padding: 4% 0 2% 0;
+    padding: 4% 0 4% 0;
 }
 
 .our_brands .wrapper h3 {
@@ -401,7 +402,6 @@ footer h4 {
     background: #0F0F0F;
 }
 
-
 @media only screen and (min-width : 260px)  {
 
     .nav {
@@ -516,8 +516,8 @@ footer h4 {
     }
 
     .new_season {
-        height: 56vh;
-        padding: 10% 40px 0 40px;
+        height: 64vh;
+        padding: 12% 0 0 0;
     }
 
     .new_collection {
@@ -525,7 +525,7 @@ footer h4 {
     }
 
     .collection_block {
-        height: 56vh;
+        height: 64vh;
         padding-top: 10%;
     }
 
@@ -538,7 +538,7 @@ footer h4 {
     }
 
     .new_items_screen {
-        height: 56vh;
+        height: 64vh;
     }
 
     .collection_block .link {
@@ -668,6 +668,26 @@ footer h4 {
     }
 }
 
+@media only screen and (max-width : 680px) {
+    .collection_block {
+        padding-top: 16%;
+    }
+}
+
+@media only screen and (min-width : 620px) {
+    .new_season {
+        height: 58vh;
+    }
+
+    .collection_block {
+        height: 58vh;
+    }
+
+    .new_items_screen {
+        height: 58vh;
+    }
+}
+
 @media only screen and (max-width : 600px) {
     h3 {
         font-size: 24px;
@@ -711,8 +731,12 @@ footer h4 {
     }
 
     .card_item {
-        height: auto;
-        width: auto;
+        max-width: 25%;
+        display: block;
+    }
+
+    .card_item img {
+
     }
 
     .bottom_line {
@@ -768,6 +792,16 @@ footer h4 {
     }
 }
 
+@media only screen and (max-width : 400px) {
+    .card_item {
+        max-height: 360px;
+    }
+
+    .card_item img {
+        max-height: 260px;
+    }
+}
+
 @media only screen and (max-width : 320px) {
     .top_line .flexAlignCenter {
         display: block;
@@ -785,7 +819,6 @@ footer h4 {
         text-align: center;
     }
 }
-
 
 
 

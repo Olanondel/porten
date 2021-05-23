@@ -30,11 +30,17 @@ $(function () {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 620,
+        settings: {
+          slidesToShow: 3
+        },
+      },
+      {
+        breakpoint: 400,
         settings: {
           slidesToShow: 2
         },
-      },
+      }
     ],
   })
 })
@@ -69,7 +75,13 @@ $(function () {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 620,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 400,
         settings: {
           slidesToShow: 2,
         },
@@ -102,7 +114,7 @@ $(function () {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 620,
         settings: {
           slidesToShow: 2,
         },
