@@ -44,12 +44,6 @@ h3 {
     font-family: 'Playfair Display', serif;
 }
 
-@media only screen and (max-width : 1100px) {
-    h3  {
-        font-size: 30px;
-    }
-}
-
 h3::after {
     content: '';
     position: relative;
@@ -130,48 +124,6 @@ input, button {
     left: -4px;
 }
 
-@media only screen and (max-width : 581px)  {
-    .top_line_wrapper {
-
-    }
-
-    .contacts {
-        padding: 10px 0;
-        display: block;
-        text-align: center;
-    }
-
-    .contacts li {
-        margin: 5px 0;
-    }
-
-    .contacts_item::after {
-        display: none;
-    }
-
-    .login {
-        margin-bottom: 15px;
-    }
-}
-
-@media only screen and (max-width : 320px) {
-    .top_line .flexAlignCenter {
-        display: block;
-    }
-
-    .contacts {
-        margin-bottom: 8px !important;
-    }
-
-    .contacts_phone {
-        margin-top: 0 !important;
-    }
-
-    .login {
-        text-align: center;
-    }
-}
-
 /* HEADER.BOTTOM_LINE */
 .logo {
     min-width: 104px;
@@ -180,146 +132,6 @@ input, button {
 .bottom_line {
     min-height: 80px;
     background: #0F0F0F;
-}
-
-@media only screen and (max-width : 600px)  {
-    .bottom_line {
-        padding-bottom: 10px;
-    }
-
-    .nav .nav_item {
-        width: 100%;
-        display: inline-block;
-    }
-}
-
-@media only screen and (min-width : 260px)  {
-
-    .nav {
-    }
-
-    .logo {
-        display: flex;
-        justify-content: center;
-        padding: 15px 0;
-    }
-
-    .nav li,
-    .helpNav li {
-        text-align: center;
-    }
-
-    .nav li a,
-    .helpNav li a {
-        font-size: 18px;
-        color: #969696;
-        height: 50px;
-        line-height: 50px;
-        padding: 0 10px;
-    }
-
-    .helpNav {
-        display: flex;
-        justify-content: center;
-    }
-
-    .helpNav li {
-        width: 60px;
-        height: 40px;
-    }
-
-    nav li a:hover {
-        background: #1F1F1F;
-        cursor: pointer;
-        color: #fff;
-    }
-
-    .navCard:hover {
-        background: #1F1F1F url('../img/icons/shop.png') center no-repeat;
-    }
-
-    .navSearch:hover {
-        background: #1F1F1F url('../img/icons/search.png') center no-repeat;
-    }
-
-    .navCard,
-    .navSearch {
-        display: block;
-        width: 100%;
-        background: transparent url('../img/icons/shop.png') center no-repeat;
-        height: 20px;
-    }
-
-    .navSearch {
-        background: transparent url('../img/icons/search.png') center no-repeat;
-    }
-}
-
-@media only screen and (min-width : 600px)  {
-    .logo {
-        padding: 15px 0 30px 0;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .nav {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .nav li {
-        /*padding: 0 20px;*/
-        display: flex;
-        align-items: center;
-    }
-
-    .helpNav {
-        display: flex;
-    }
-}
-
-@media only screen and (min-width : 680px) {
-    .logo {
-        margin-right: 30px;
-        padding: 0;
-    }
-
-    .bottom_line .wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .logo, nav {
-        height: 80px;
-        display: flex;
-        align-items: center;
-    }
-
-    nav {
-        height: 30px;
-    }
-
-    .nav li {
-        height: 80px;
-    }
-
-    .nav li a {
-        height: 80px;
-        display: inline-block;
-        line-height: 80px;
-        padding: 0 20px;
-    }
-
-    .helpNav li a,
-    .helpNav li {
-        height: 80px;
-        margin: 0;
-        padding: 0;
-    }
 }
 
 /* FIRST SCREEN */
@@ -377,38 +189,6 @@ input, button {
 
 }
 
-@media only screen and (max-width : 960px) {
-    .card_item,
-    .brand_item {
-        text-align: center;
-    }
-
-    .card_item img,
-    .brand_item img {
-        margin: 0 auto;
-    }
-}
-
-@media only screen and (max-width : 600px) {
-    .porten_screen {
-        height: 60vh;
-    }
-
-    .porten {
-        text-align: center;
-    }
-
-    .porten img {
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
-    .main_pharaf {
-        font-size: 12px;
-        padding-top: 6%;
-    }
-}
-
 .card_list {
     display: flex;
     flex-direction: row;
@@ -440,46 +220,10 @@ input, button {
     font-weight: bold;
 }
 
-
-
-@media only screen and (max-width : 768px)  {
-    h3 {
-        font-size: 26px;
-    }
-    .link {
-        font-size: 14px;
-    }
-}
-
-@media only screen and (max-width : 960px) {
-    .second_screen {
-        flex-direction: column;
-    }
-
-    .new_season,
-    .new_collection {
-        width: 100%;
-    }
-
-    .new_collection .content {
-
-    }
-}
-
 .third_screen {
     display: flex;
     flex-direction: row;
     height: 70vh;
-}
-
-@media only screen and (max-width : 1240px) {
-    .second_screen {
-        height: 60vh;
-    }
-
-    .third_screen {
-        height: 60vh;
-    }
 }
 
 .img_block {
@@ -508,58 +252,6 @@ input, button {
 
 .collection_block .link {
     margin-bottom: 80px;
-}
-
-@media only screen and (max-width : 960px) {
-    .second_screen {
-        height: auto;
-    }
-
-    .new_season {
-        height: 62vh;
-    }
-
-    .new_collection {
-        height: 50vh;
-    }
-
-    .collection_block {
-        height: 62vh;
-        padding-top: 10%;
-    }
-
-    .third_screen {
-        height: auto;
-    }
-
-    .img_block {
-        height: 50vh;
-    }
-
-    .new_items_screen {
-        height: 62vh;
-    }
-}
-
-
-
-@media only screen and (max-width : 960px) {
-    .collection_block .link {
-        margin-bottom: 40px;
-    }
-
-    .third_screen {
-        flex-direction: column;
-    }
-
-    .img_block {
-        width: 100%;
-        order: 2;
-    }
-
-    .collection_block {
-        width: 100%;
-    }
 }
 
 /* NEW_ITEMS_SCREEN */
@@ -611,12 +303,6 @@ input, button {
 .brand_list img {
     max-width: 255px;
     height: auto;
-}
-
-@media only screen and (max-width : 1100px) {
-    .our_brands .wrapper .brand_list {
-        flex-wrap: wrap;
-    }
 }
 
 /* FOOTER */
@@ -716,7 +402,181 @@ footer h4 {
 }
 
 
-@media only screen and (max-width : 960px)  {
+@media only screen and (min-width : 260px)  {
+
+    .nav {
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+    }
+
+    .nav li,
+    .helpNav li {
+        text-align: center;
+    }
+
+    .nav li a,
+    .helpNav li a {
+        font-size: 18px;
+        color: #969696;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 10px;
+    }
+
+    .helpNav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .helpNav li {
+        width: 60px;
+        height: 40px;
+    }
+
+    nav li a:hover {
+        background: #1F1F1F;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .navCard:hover {
+        background: #1F1F1F url('../img/icons/shop.png') center no-repeat;
+    }
+
+    .navSearch:hover {
+        background: #1F1F1F url('../img/icons/search.png') center no-repeat;
+    }
+
+    .navCard,
+    .navSearch {
+        display: block;
+        width: 100%;
+        background: transparent url('../img/icons/shop.png') center no-repeat;
+        height: 20px;
+    }
+
+    .navSearch {
+        background: transparent url('../img/icons/search.png') center no-repeat;
+    }
+}
+
+@media only screen and (min-width : 600px)  {
+    .logo {
+        padding: 15px 0 30px 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav li {
+        /*padding: 0 20px;*/
+        display: flex;
+        align-items: center;
+    }
+
+    .helpNav {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width : 1240px) {
+    .second_screen {
+        height: 60vh;
+    }
+
+    .third_screen {
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-width : 1100px) {
+    .our_brands .wrapper .brand_list {
+        flex-wrap: wrap;
+    }
+
+    h3  {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width : 960px) {
+    .second_screen {
+        height: auto;
+    }
+
+    .new_season {
+        height: 56vh;
+        padding: 10% 40px 0 40px;
+    }
+
+    .new_collection {
+        height: 50vh;
+    }
+
+    .collection_block {
+        height: 56vh;
+        padding-top: 10%;
+    }
+
+    .third_screen {
+        height: auto;
+    }
+
+    .img_block {
+        height: 50vh;
+    }
+
+    .new_items_screen {
+        height: 56vh;
+    }
+
+    .collection_block .link {
+        margin-bottom: 40px;
+    }
+
+    .third_screen {
+        flex-direction: column;
+    }
+
+    .img_block {
+        width: 100%;
+        order: 2;
+    }
+
+    .collection_block {
+        width: 100%;
+    }
+
+    .card_item,
+    .brand_item {
+        text-align: center;
+    }
+
+    .card_item img,
+    .brand_item img {
+        margin: 0 auto;
+    }
+
+    .second_screen {
+        flex-direction: column;
+    }
+
+    .new_season,
+    .new_collection {
+        width: 100%;
+    }
+
     .footer_container {
         flex-wrap: wrap;
     }
@@ -736,9 +596,19 @@ footer h4 {
     .subscribe {
         justify-content: center;
     }
-    
+
     .subscribe button {
         font-size: 10px;
+    }
+}
+
+
+@media only screen and (max-width : 768px)  {
+    h3 {
+        font-size: 26px;
+    }
+    .link {
+        font-size: 14px;
     }
 }
 
@@ -751,21 +621,52 @@ footer h4 {
     .distribution {
         width: 100%;
     }
-}
 
-@media only screen and (max-width: 760px) {
     .subscribe button {
         font-size: 12px;
     }
 }
 
-/* Media Queries  */
-@media only screen and (max-width : 1024px) {}
-@media only screen and (max-width : 800px)  {}
-@media only screen and (max-width : 768px)  {}
-@media only screen and (max-width : 600px)  {}
-@media only screen and (max-width : 360px)  {}
+@media only screen and (min-width : 680px) {
+    .logo {
+        margin-right: 30px;
+        padding: 0;
+    }
 
+    .bottom_line .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo, nav {
+        height: 80px;
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+        height: 30px;
+    }
+
+    .nav li {
+        height: 80px;
+    }
+
+    .nav li a {
+        height: 80px;
+        display: inline-block;
+        line-height: 80px;
+        padding: 0 20px;
+    }
+
+    .helpNav li a,
+    .helpNav li {
+        height: 80px;
+        margin: 0;
+        padding: 0;
+    }
+}
 
 @media only screen and (max-width : 600px) {
     h3 {
@@ -781,7 +682,7 @@ footer h4 {
     }
 
     .new_season {
-        height: 62vh;
+        height: 58vh;
     }
 
     .new_collection {
@@ -789,7 +690,7 @@ footer h4 {
     }
 
     .collection_block {
-        height: 62vh;
+        height: 58vh;
         padding-top: 12%;
     }
 
@@ -802,7 +703,7 @@ footer h4 {
     }
 
     .new_items_screen {
-        height: 62vh;
+        height: 58vh;
     }
 
     .card_list {
@@ -813,4 +714,78 @@ footer h4 {
         height: auto;
         width: auto;
     }
+
+    .bottom_line {
+        padding-bottom: 10px;
+    }
+
+    .nav .nav_item {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .porten_screen {
+        height: 60vh;
+    }
+
+    .porten {
+        text-align: center;
+    }
+
+    .porten img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .main_pharaf {
+        font-size: 12px;
+        padding-top: 6%;
+    }
 }
+
+
+@media only screen and (max-width : 581px)  {
+    .top_line_wrapper {
+
+    }
+
+    .contacts {
+        padding: 10px 0;
+        display: block;
+        text-align: center;
+    }
+
+    .contacts li {
+        margin: 5px 0;
+    }
+
+    .contacts_item::after {
+        display: none;
+    }
+
+    .login {
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width : 320px) {
+    .top_line .flexAlignCenter {
+        display: block;
+    }
+
+    .contacts {
+        margin-bottom: 8px !important;
+    }
+
+    .contacts_phone {
+        margin-top: 0 !important;
+    }
+
+    .login {
+        text-align: center;
+    }
+}
+
+
+
+
