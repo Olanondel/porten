@@ -164,7 +164,7 @@ input, button {
 .second_screen {
     display: flex;
     flex-direction: row;
-    height: 70vh;
+    min-height: 56vh;
 }
 
 .new_season {
@@ -224,7 +224,7 @@ input, button {
 .third_screen {
     display: flex;
     flex-direction: row;
-    height: 70vh;
+    min-height: 56vh;
 }
 
 .img_block {
@@ -236,7 +236,7 @@ input, button {
 
 .collection_block {
     width: 60%;
-    padding-top: 10%;
+    padding: 4% 0 4% 0;
 }
 
 .collection_block,
@@ -258,7 +258,7 @@ input, button {
 /* NEW_ITEMS_SCREEN */
 
 .new_items_screen {
-    padding-top: 50px;
+    padding: 5%;
 }
 
 .new_items_list {
@@ -284,7 +284,7 @@ input, button {
 /* OUR BRANDS */
 .our_brands {
     background: #0F0F0F;
-    padding: 4% 0 4% 0;
+    padding: 6% 0 6% 0;
 }
 
 .our_brands .wrapper h3 {
@@ -492,11 +492,11 @@ footer h4 {
 
 @media only screen and (max-width : 1240px) {
     .second_screen {
-        height: 60vh;
+        min-height: 54vh;
     }
 
     .third_screen {
-        height: 60vh;
+        min-height: 54vh;
     }
 }
 
@@ -516,8 +516,8 @@ footer h4 {
     }
 
     .new_season {
-        height: 64vh;
-        padding: 12% 0 0 0;
+        min-height: 60vh;
+        padding: 6% 0 0 0;
     }
 
     .new_collection {
@@ -525,8 +525,7 @@ footer h4 {
     }
 
     .collection_block {
-        height: 64vh;
-        padding-top: 10%;
+        min-height: 64vh;
     }
 
     .third_screen {
@@ -538,7 +537,8 @@ footer h4 {
     }
 
     .new_items_screen {
-        height: 64vh;
+        min-height: 64vh;
+        padding: 6% 0 0 0;
     }
 
     .collection_block .link {
@@ -670,21 +670,20 @@ footer h4 {
 
 @media only screen and (max-width : 680px) {
     .collection_block {
-        padding-top: 16%;
     }
 }
 
 @media only screen and (min-width : 620px) {
     .new_season {
-        height: 58vh;
     }
 
     .collection_block {
-        height: 58vh;
+        min-height: 52vh;
+        padding: 6% 0 0% 0;
     }
 
     .new_items_screen {
-        height: 58vh;
+        min-height: 58vh;
     }
 }
 
@@ -702,16 +701,16 @@ footer h4 {
     }
 
     .new_season {
-        height: 58vh;
+        min-height: 58vh;
     }
 
     .new_collection {
-        height: 44vh;
+        min-height: 44vh;
     }
 
     .collection_block {
-        height: 58vh;
-        padding-top: 12%;
+        min-height: 52vh;
+        padding: 10% 0 4% 0;
     }
 
     .third_screen {
@@ -719,11 +718,11 @@ footer h4 {
     }
 
     .img_block {
-        height: 44vh;
+        min-height: 44vh;
     }
 
     .new_items_screen {
-        height: 58vh;
+        min-height: 58vh;
     }
 
     .card_list {
@@ -799,6 +798,12 @@ footer h4 {
 
     .card_item img {
         max-height: 260px;
+    }
+
+    .new_season,
+    .new_items_screen {
+        min-height: 40vh;
+        height: 52vh;
     }
 }
 
