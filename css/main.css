@@ -351,6 +351,7 @@ input, button {
 .second_screen {
     display: flex;
     flex-direction: row;
+    height: 70vh;
 }
 
 .new_season {
@@ -364,18 +365,19 @@ input, button {
     background: url('../img/new_collection_bg.png') left top no-repeat;
     background-size: cover;
     display: flex;
+    align-items: flex-end;
     justify-content: center;
     max-height: 730px;
+
 }
 
 .new_collection .content {
     text-align: center;
-    padding-top: 70%;
-    padding-bottom: 15%;
+    padding-bottom: 14%;
 
 }
 
-@media only screen and (max-width : 899px) {
+@media only screen and (max-width : 960px) {
     .card_item,
     .brand_item {
         text-align: center;
@@ -412,7 +414,7 @@ input, button {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 25px 50px 25px;
+    padding: 25px 25px 10px 25px;
     font-family: 'Playfair Display', serif;
 }
 
@@ -460,7 +462,6 @@ input, button {
     }
 
     .new_collection .content {
-        padding-top: 40%;
 
     }
 }
@@ -468,16 +469,29 @@ input, button {
 .third_screen {
     display: flex;
     flex-direction: row;
+    height: 70vh;
+}
+
+@media only screen and (max-width : 1240px) {
+    .second_screen {
+        height: 60vh;
+    }
+
+    .third_screen {
+        height: 60vh;
+    }
 }
 
 .img_block {
     width: 40%;
     background: url('../img/img_block_bg.jpg') top center no-repeat;
+    background-size: cover;
+    max-height: 730px;
 }
 
 .collection_block {
     width: 60%;
-    padding-top: 5%;
+    padding-top: 10%;
 }
 
 .collection_block,
@@ -489,12 +503,45 @@ input, button {
     max-width: 480px;
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding: 0 15px 50px 15px;
 }
 
 .collection_block .link {
     margin-bottom: 80px;
 }
+
+@media only screen and (max-width : 960px) {
+    .second_screen {
+        height: auto;
+    }
+
+    .new_season {
+        height: 62vh;
+    }
+
+    .new_collection {
+        height: 50vh;
+    }
+
+    .collection_block {
+        height: 62vh;
+        padding-top: 10%;
+    }
+
+    .third_screen {
+        height: auto;
+    }
+
+    .img_block {
+        height: 50vh;
+    }
+
+    .new_items_screen {
+        height: 62vh;
+    }
+}
+
+
 
 @media only screen and (max-width : 960px) {
     .collection_block .link {
@@ -507,7 +554,6 @@ input, button {
 
     .img_block {
         width: 100%;
-        min-height: 730px;
         order: 2;
     }
 
@@ -545,11 +591,10 @@ input, button {
 /* OUR BRANDS */
 .our_brands {
     background: #0F0F0F;
-    padding: 30px 0 20px 0;
+    padding: 4% 0 2% 0;
 }
 
 .our_brands .wrapper h3 {
-    margin-top: 40px;
 }
 
 .our_brands .wrapper .brand_list {
@@ -693,14 +738,24 @@ footer h4 {
     }
     
     .subscribe button {
-        font-size: 8px;
+        font-size: 10px;
     }
 }
 
 @media only screen and (max-width : 760px) {
+    .about_magazine {
+        text-align: center;
+    }
+
     .categories,
     .distribution {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .subscribe button {
+        font-size: 12px;
     }
 }
 
@@ -710,3 +765,52 @@ footer h4 {
 @media only screen and (max-width : 768px)  {}
 @media only screen and (max-width : 600px)  {}
 @media only screen and (max-width : 360px)  {}
+
+
+@media only screen and (max-width : 600px) {
+    h3 {
+        font-size: 24px;
+    }
+
+    .link {
+        padding: 14px 20px;
+    }
+
+    .second_screen {
+        height: auto;
+    }
+
+    .new_season {
+        height: 62vh;
+    }
+
+    .new_collection {
+        height: 44vh;
+    }
+
+    .collection_block {
+        height: 62vh;
+        padding-top: 12%;
+    }
+
+    .third_screen {
+        height: auto;
+    }
+
+    .img_block {
+        height: 44vh;
+    }
+
+    .new_items_screen {
+        height: 62vh;
+    }
+
+    .card_list {
+        padding: 0;
+    }
+
+    .card_item {
+        height: auto;
+        width: auto;
+    }
+}
