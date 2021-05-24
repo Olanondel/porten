@@ -149,7 +149,7 @@ $(document).ready(function () {
 
     $('.brand_items_list').slick({
         arrows: false,
-        slidesToShow: 2,
+        slidesToShow: 1,
         autoplay: true,
         mobileFirst: true,
         autoplaySpeed: 2000,
