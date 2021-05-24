@@ -183,6 +183,7 @@ input, button {
     max-height: 405px;
     margin-bottom: 40px;
     font-family: 'Playfair Display', serif;
+    overflow: hidden;
 }
 
 .item_header {
