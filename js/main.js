@@ -5,8 +5,8 @@ $(document).ready(function () {
         if (!$('.slider-2').hasClass('slick-initialized') && $(window).width() < 769) {
             $('.new_items_screen .products_list').slick({
                 arrows: false,
-                slidesToShow: 4,
-                slidesToScroll: 4,
+                slidesToShow: 3,
+                slidesToScroll: 3,
                 autoplay: true,
                 mobileFirst: true,
                 autoplaySpeed: 2000,
@@ -21,13 +21,6 @@ $(document).ready(function () {
                         settings: {
                             slidesToShow: 3,
                             slidesToScroll: 3
-                        }
-                    },
-                    {
-                        breakpoint: 277,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2
                         }
                     },
                     {
@@ -75,7 +68,7 @@ $(document).ready(function () {
     $('.new_season .products_list').slick({
         arrows: false,
         slidesToScroll: 3,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         speed: 1500,
         slidesToShow: 3,
@@ -115,13 +108,6 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 277,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
                 breakpoint: 100,
                 settings: {
                     slidesToShow: 1,
@@ -133,8 +119,8 @@ $(document).ready(function () {
 
     $('.new_items_screen .products_list').slick({
         arrows: false,
-        slidesToShow: 4,
-      slidesToScroll: 4,
+        slidesToShow: 3,
+      slidesToScroll: 3,
         autoplay: true,
         mobileFirst: true,
         autoplaySpeed: 2000,
@@ -152,13 +138,6 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 277,
-                settings: {
-                    slidesToShow: 2,
-                  slidesToScroll: 2
-                }
-            },
-            {
                 breakpoint: 100,
                 settings: {
                     slidesToShow: 1,
@@ -170,7 +149,7 @@ $(document).ready(function () {
 
     $('.brand_items_list').slick({
         arrows: false,
-        slidesToShow: 1,
+        slidesToShow: 2,
         autoplay: true,
         mobileFirst: true,
         autoplaySpeed: 2000,
