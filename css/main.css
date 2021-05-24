@@ -182,7 +182,16 @@ input, button {
     max-width: 260px;
     max-height: 405px;
     margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+}
 
+.item_header {
+    font-size: 18px;
+
+}
+
+.item_price {
+    font-size: 16px;
 }
 
 .slick-slide {
@@ -274,6 +283,7 @@ input, button {
     text-align: center;
     margin: 0 auto;
     padding: 0 15px 50px 15px;
+    line-height: 21px;
 }
 
 .collection_block .link {
@@ -473,7 +483,7 @@ footer h4 {
 
     .nav li a,
     .helpNav li a {
-        font-size: 18px;
+        font-size: 14px;
         color: #969696;
         height: 50px;
         line-height: 50px;
@@ -739,6 +749,10 @@ footer h4 {
         min-height: 52vh;
         padding: 10% 0 4% 0;
     }
+
+    .main_pharaf {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (min-width : 620px) {
@@ -817,6 +831,7 @@ footer h4 {
 
     .porten_screen {
         min-height: 60vh;
+        padding: 14% 15px 6% 15px;
     }
 
     .porten {
