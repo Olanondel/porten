@@ -175,7 +175,7 @@ input, button {
 
 .products_list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .products_list > div {
