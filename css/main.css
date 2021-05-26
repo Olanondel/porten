@@ -530,7 +530,7 @@ footer h4 {
 
 @media only screen and (min-width : 600px)  {
     .logo {
-        padding: 15px 0 30px 0;
+        padding: 14px 0 16px 0;
     }
 
     nav {
@@ -822,6 +822,11 @@ footer h4 {
     }
 
     .bottom_line {
+        min-height: 56px;
+    }
+
+    .bottom_line .wrapper {
+        min-height: 40px !important;
     }
 
     .nav {
@@ -888,6 +893,17 @@ footer h4 {
 
     .helpNav {
         order: 1;
+    }
+
+    .helpNav li a,
+    .burger_btn {
+        min-height: 56px;
+        margin: 0;
+    }
+
+    .burger_btn {
+        display: flex;
+        align-items: center;
     }
 
     .logo {
