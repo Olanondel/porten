@@ -1036,6 +1036,28 @@ footer h4 {
     .new_items_screen {
         min-height: 40vh;
     }
+
+    .align_block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer_copyright {
+        padding: 0;
+    }
+
+    .align_block span:nth-child(1) {
+        order: 2;
+        padding: 0 0 4px 0;
+    }
+
+    .align_block span:nth-child(2) {
+        order: 1;
+    }
+
+    .align_block span {
+        padding: 10px 0;
+    }
 }
 
 @media screen and (max-width : 320px) {
