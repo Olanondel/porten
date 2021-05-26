@@ -41,8 +41,9 @@ h3 {
     line-height: 48px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     font-family: 'Playfair Display', serif;
+    word-wrap: break-word;
 }
 
 h3::after {
@@ -170,7 +171,7 @@ input, button {
 .new_season {
     width: 60%;
     display: inline-block;
-    padding: 60px 40px 40px 40px;
+    padding: 70px 10px 80px;
 }
 
 .products_list {
@@ -188,6 +189,10 @@ input, button {
     margin-bottom: 40px;
     font-family: 'Playfair Display', serif;
     overflow: hidden;
+}
+
+.second_screen .products_item {
+    margin-bottom: 0;
 }
 
 .item_header {
@@ -237,6 +242,12 @@ input, button {
 
 .item_header {
     margin-bottom: 10px;
+    line-height: 24px;
+}
+
+.item_price {
+    font-size: 16px;
+    line-height: 21px;
 }
 
 .new_collection {
@@ -246,13 +257,11 @@ input, button {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    max-height: 730px;
-
+    padding-bottom: 8%;
 }
 
 .new_collection .content {
     text-align: center;
-    padding-bottom: 14%;
 
 }
 
@@ -266,7 +275,6 @@ input, button {
     width: 40%;
     background: url('../img/img_block_bg.jpg') top center no-repeat;
     background-size: cover;
-    max-height: 730px;
 }
 
 .collection_block {
@@ -294,7 +302,7 @@ input, button {
 /* NEW_ITEMS_SCREEN */
 
 .new_items_screen {
-    padding: 5%;
+    padding: 70px 0 5px;
 }
 
 
@@ -393,7 +401,8 @@ footer h4 {
     border: 0;
     padding: 10px 20px;
     cursor: pointer;
-    max-width: 140px;
+    font-size: 14px;
+    letter-spacing: 0.05em;
 }
 
 .categories_links {
@@ -571,22 +580,34 @@ footer h4 {
     }
 
     h3  {
-        font-size: 30px;
     }
 }
 
 @media only screen and (max-width : 960px) {
+
+    h3 {
+        font-size: 32px;
+    }
+
+    footer h4  {
+        font-size: 20px;
+    }
+
+    .main_pharaf {
+        font-size: 14px;
+    }
+
     .second_screen {
         height: auto;
     }
 
     .new_season {
-        min-height: 60vh;
-        padding: 8% 0 6% 0;
+        min-height: 50vh;
+        padding: 4% 0 6%;
     }
 
     .new_collection {
-        min-height: 50vh;
+        min-height: 54vh;
     }
 
     .collection_block {
@@ -598,12 +619,12 @@ footer h4 {
     }
 
     .img_block {
-        height: 50vh;
+        min-height: 54vh;
     }
 
     .new_items_screen {
         min-height: 64vh;
-        padding: 8% 0 6% 0;
+        padding: 4% 0 5px;
     }
 
     .collection_block .link {
@@ -621,6 +642,10 @@ footer h4 {
 
     .collection_block {
         width: 100%;
+    }
+
+    .our_brands {
+        padding: 4% 0 6%;
     }
 
     .card_item,
@@ -670,10 +695,17 @@ footer h4 {
 
 @media only screen and (max-width : 768px)  {
     h3 {
-        font-size: 26px;
     }
     .link {
         font-size: 14px;
+    }
+
+    .new_items_screen {
+        padding: 4% 0 6%;
+    }
+
+    .new_items_screen .products_item {
+        margin-bottom: 0;
     }
 }
 
@@ -689,6 +721,10 @@ footer h4 {
 
     .subscribe button {
         font-size: 12px;
+    }
+
+    .footer_main_block {
+        padding: 6% 0 0%;
     }
 }
 
@@ -748,6 +784,10 @@ footer h4 {
     .main_pharaf {
         font-size: 14px;
     }
+
+    .second_screen .new_season {
+
+    }
 }
 
 @media only screen and (min-width : 769px) {
@@ -766,13 +806,47 @@ footer h4 {
     }
 
     .new_items_screen {
-        min-height: 58vh;
+        min-height: 50vh;
+    }
+}
+
+@media only screen and (max-width : 620px) {
+    .new_items_screen {
+        min-height: 42vh;
+    }
+
+    h3  {
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+
+    .main_pharaf {
+        font-size: 12px;
+    }
+
+    .item_header {
+        font-size: 16px;
+    }
+
+    .item_price {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .link, .subscribe button {
+        font-size: 11px;
+    }
+
+    .footer_container {
+        gap: 8px;
     }
 }
 
 @media only screen and (max-width : 600px) {
     h3 {
-        font-size: 24px;
     }
 
     .link {
@@ -784,7 +858,8 @@ footer h4 {
     }
 
     .new_season {
-        min-height: 58vh;
+        min-height: 48vh;
+        padding: 8% 0 10%
     }
 
     .new_collection {
@@ -805,7 +880,8 @@ footer h4 {
     }
 
     .new_items_screen {
-        min-height: 58vh;
+        min-height: 42vh;
+        padding: 8% 0 10%;
     }
 
     .card_list {
@@ -1006,8 +1082,17 @@ footer h4 {
 
 @media screen and (max-width : 340px) {
     .brand_item img {
-        width: 160px;
     }
+}
+
+@media screen and (max-width : 320px) {
+    header {
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width : 280px) {
+
 }
 
 
