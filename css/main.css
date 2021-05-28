@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
+/* SWIPER */
+.swiper-container {
+}
+
 /* GENERAL */
 body {
     color: #fff;
@@ -131,6 +135,10 @@ input, button {
     min-width: 104px;
 }
 
+.mobile_info {
+    display: none;
+}
+
 .bottom_line {
     min-height: 80px;
     background: #0F0F0F;
@@ -163,32 +171,39 @@ input, button {
 /* SECOND SCREEN */
 
 .second_screen {
-    display: flex;
-    flex-direction: row;
-    min-height: 56vh;
-}
-
-.new_season {
-    width: 60%;
-    display: inline-block;
-    padding: 70px 10px 80px;
-}
-
-.products_list {
+    min-height: 0;
     display: flex;
     justify-content: space-between;
 }
 
-.products_list > div {
-
+.new_season {
+    max-width: 60%;
+    padding: 70px 35px 80px;
+    display: inline-block;
+    flex: 0 1 60%;
 }
 
-.products_item {
-    max-width: 260px;
-    max-height: 405px;
-    margin-bottom: 40px;
+.new_season .products_list {
+    max-width: 880px;
+    display: flex;
+}
+
+.swiper-container {
+    width: 100%;
+}
+
+.swiper-1 .swiper-wrapper {
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.swiper-1 .swiper-slide {
+    width: 25%;
+    padding: 10px;
+}
+
+.new_season .products_item {
     font-family: 'Playfair Display', serif;
-    overflow: hidden;
 }
 
 .second_screen .products_item {
@@ -214,6 +229,16 @@ input, button {
 
 .new_items_screen .products_list {
     flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.new_items_screen .products_list > div {
+    flex: 1 1 25%;
+}
+
+.new_items_screen .products_item {
+    margin-bottom: 40px;
 }
 
 @media screen and (max-width: 960px) {
@@ -224,14 +249,11 @@ input, button {
 
 .brand_item,
 .brand_item img {
-    max-width: 255px;
     max-height: 94px;
     margin: 0 auto;
 }
 
 .img_wrapper {
-    max-height: 325px;
-    max-width: 260px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,13 +273,15 @@ input, button {
 }
 
 .new_collection {
-    width: 40%;
     background: url('../img/new_collection_bg.png') left top no-repeat;
     background-size: cover;
     display: flex;
+    min-height: 100%;
     align-items: flex-end;
     justify-content: center;
-    padding-bottom: 8%;
+    padding: 2% 0 8%;
+    width: 40%;
+    flex: 0 1 40%;
 }
 
 .new_collection .content {
@@ -391,7 +415,8 @@ footer h4 {
 }
 
 .subscribe input::placeholder {
-    color: #fff
+    color: #fff;
+    text-align: center;
 }
 
 .subscribe button {
@@ -575,8 +600,6 @@ footer h4 {
 
 @media only screen and (max-width : 1100px) {
     .brand_item {
-        width: 44%;
-        max-width: 44%;
     }
 
     h3  {
@@ -599,11 +622,13 @@ footer h4 {
 
     .second_screen {
         height: auto;
+        display: block;
     }
 
     .new_season {
         min-height: 50vh;
-        padding: 4% 0 6%;
+        min-width: 100%;
+        padding: 4% 20px 6%;
     }
 
     .new_collection {
@@ -671,6 +696,10 @@ footer h4 {
         flex-wrap: wrap;
     }
 
+    .footer_main_block {
+        padding: 40px 40px;
+    }
+
     .about_magazine {
         width: 100%;
         margin-bottom: 60px;
@@ -724,7 +753,7 @@ footer h4 {
     }
 
     .footer_main_block {
-        padding: 6% 0 0%;
+        padding: 40px 80px
     }
 }
 
@@ -788,11 +817,18 @@ footer h4 {
     .second_screen .new_season {
 
     }
+
+    .new_items_screen .item_header {
+        font-size: 16px;
+    }
+
+    .new_items_screen .item_price {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (min-width : 769px) {
     .new_items_screen .products_list > div {
-        width: 22%;
     }
 }
 
@@ -802,12 +838,30 @@ footer h4 {
 
     .collection_block {
         min-height: 52vh;
-        padding: 6% 0 0% 0;
+        padding: 4% 0 0 0;
     }
 
     .new_items_screen {
         min-height: 50vh;
     }
+}
+
+@media only screen and (max-width : 640px) {
+    .item_header,
+    .item_price {
+        text-align: center;
+    }
+
+    .swiper-1 .swiper-wrapper {
+        flex-wrap: nowrap;
+        margin: 0 -10px;
+    }
+
+    .swiper-1 .swiper-slide {
+        width: 25%;
+        padding: 10px;
+    }
+
 }
 
 @media only screen and (max-width : 620px) {
@@ -853,13 +907,43 @@ footer h4 {
         padding: 14px 20px;
     }
 
+    .top_line {
+        display: none;
+    }
+
+    .main_nav {
+        position: absolute;
+        left: 0;
+        background: #0F0F0F;
+        top: 100%;
+        padding: 0 0 20px 0;
+        display: none;
+    }
+
+    .mobile_info {
+        display: block;
+    }
+
+    .main_nav .contacts {
+        margin: 0 0 40px 0;
+    }
+
+    .main_nav .nav {
+        margin-bottom: 20px;
+    }
+
+    .main_nav .mobile_info {
+        text-align: center;
+        padding: 0 20px;
+    }
+
     .second_screen {
         height: auto;
     }
 
     .new_season {
         min-height: 48vh;
-        padding: 8% 0 10%
+        padding: 8% 20px 10%
     }
 
     .new_collection {
@@ -935,7 +1019,6 @@ footer h4 {
     }
 
     .nav {
-        display: none;
     }
 
     .bottom_line .wrapper {
@@ -957,9 +1040,6 @@ footer h4 {
 
     .nav {
         order: 2;
-        position: absolute;
-        top: 100%;
-        left: 0;
     }
 
     .nav li a {
@@ -1010,7 +1090,6 @@ footer h4 {
     }
 
     .login {
-        margin-bottom: 15px;
     }
 }
 
@@ -1021,7 +1100,11 @@ footer h4 {
     }
 }
 
-
+@media screen and (max-width : 480px) {
+    .footer_main_block {
+        padding: 40px;
+    }
+}
 
 @media screen and (max-width : 400px) {
     .card_item {
@@ -1042,6 +1125,22 @@ footer h4 {
         align-items: center;
     }
 
+    .subscribe {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 30px;
+    }
+
+    .subscribe input {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 10px 30px;
+    }
+
+    .subscribe button {
+        flex: 0 0 100%;
+    }
+
     .footer_copyright {
         padding: 0;
     }
@@ -1057,6 +1156,14 @@ footer h4 {
 
     .align_block span {
         padding: 10px 0;
+    }
+
+    .footer_main_block {
+        padding: 40px 20px 0;
+    }
+
+    .distribution {
+        margin-bottom: 40px;
     }
 }
 
@@ -1109,7 +1216,6 @@ footer h4 {
 
 @media screen and (max-width : 320px) {
     header {
-        padding-top: 10px;
     }
 }
 

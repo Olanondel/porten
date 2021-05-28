@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Porten</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/libs/slick.css">
-    <link rel="stylesheet" href="./css/libs/slick-theme.css">
+    <link rel="stylesheet" href="./css/libs/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -36,7 +35,7 @@
         </div>
     </div>
 
-<!-- HEADER BOTTOM LINE -->
+    <!-- HEADER BOTTOM LINE -->
     <div class="bottom_line">
         <div class="wrapper">
             <div class="logo">
@@ -50,11 +49,31 @@
                         <span></span>
                     </span>
                 </a>
-                <ul class="nav">
-                    <li><a class="active nav_item" href="#">Понравилось</a></li>
-                    <li><a href="#" class="nav_item">Личный кабинет</a></li>
-                    <li><a href="#" class="nav_item">Настройки</a></li>
-                </ul>
+                <div class="main_nav">
+                    <ul class="nav">
+                        <li><a class="active nav_item" href="#">Понравилось</a></li>
+                        <li><a href="#" class="nav_item">Личный кабинет</a></li>
+                        <li><a href="#" class="nav_item">Настройки</a></li>
+                    </ul>
+                    <div class="mobile_info">
+                        <ul class="contacts">
+                            <li class="contacts_item contacts_phone">
+                                <a href="tel:+88121234567">8 (812) 123-45-67</a>
+                            </li>
+                            <li class="contacts_item">
+                                Работаем 7 дней в неделю
+                            </li>
+                            <li class="contacts_item">
+                                9:00 — 18:00
+                            </li>
+                        </ul>
+                        <div class="login">
+                            <a class="signInBtn" href="#">Войти</a>
+                            &nbsp;/&nbsp;
+                            <a href="#">Регистрация</a>
+                        </div>
+                    </div>
+                </div>
                 <ul class="helpNav">
                     <li><a href="#" class="navCard"></a></li>
                     <li><a href="#" class="navSearch"></a></li>
@@ -70,7 +89,10 @@
         <img src="./img/porten_block.png" alt="porten">
     </div>
 
-    <p class="main_pharaf">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus interdum purus, est tortor pulvinar ut in. Fringilla a diam enim sed justo, sed iaculis sagittis. Tortor id eu interdum nec ut iaculis. Penatibus ullamcorper ultricies morbi ipsum sem metus pharetra, mi. Tortor nibh magna feugiat id nunc, dui nisl viverra.</p>
+    <p class="main_pharaf">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus interdum purus, est tortor
+        pulvinar ut in. Fringilla a diam enim sed justo, sed iaculis sagittis. Tortor id eu interdum nec ut iaculis.
+        Penatibus ullamcorper ultricies morbi ipsum sem metus pharetra, mi. Tortor nibh magna feugiat id nunc, dui nisl
+        viverra.</p>
 </div>
 
 <!--  LAST SEASON SCREEN  -->
@@ -78,10 +100,48 @@
     <div class="new_season">
         <h3>СЕЗОН 2020/21</h3>
 
-        <div class="products_list">
+        <div class="products_list swiper-container swiper-0">
+            <div class="swiper-wrapper">
+                <div class="products_item swiper-slide">
+                    <a href="#">
+                        <div class="img_wrapper">
+                            <img src="./img/card.png" alt="">
+                        </div>
+                    </a>
+                    <div class="item_header">
+                        <a href="#">Louis XVI ATHOS</a>
+                    </div>
+                    <div class="item_price">165 000 руб.</div>
+                </div>
 
-            <div>
-                <div class="products_item">
+
+                <div class="products_item swiper-slide">
+                    <a href="#">
+                        <div class="img_wrapper">
+                            <img src="./img/card.png" alt="">
+                        </div>
+                    </a>
+                    <div class="item_header">
+                        <a href="#">Louis XVI ATHOS</a>
+                    </div>
+                    <div class="item_price">165 000 руб.</div>
+                </div>
+
+
+                <div class="products_item  swiper-slide">
+                    <a href="#">
+                        <div class="img_wrapper">
+                            <img src="./img/card.png" alt="">
+                        </div>
+                    </a>
+                    <div class="item_header">
+                        <a href="#">Louis XVI ATHOS</a>
+                    </div>
+                    <div class="item_price">165 000 руб.</div>
+                </div>
+
+
+                <div class="products_item  swiper-slide">
                     <a href="#">
                         <div class="img_wrapper">
                             <img src="./img/card.png" alt="">
@@ -93,92 +153,14 @@
                     <div class="item_price">165 000 руб.</div>
                 </div>
             </div>
-
-
-            <div>
-                <div class="products_item">
-                    <a href="#">
-                        <div class="img_wrapper">
-                            <img src="./img/card.png" alt="">
-                        </div>
-                    </a>
-                    <div class="item_header">
-                        <a href="#">Louis XVI ATHOS</a>
-                    </div>
-                    <div class="item_price">165 000 руб.</div>
-                </div>
-            </div>
-
-
-            <div>
-                <div class="products_item">
-                    <a href="#">
-                        <div class="img_wrapper">
-                            <img src="./img/card.png" alt="">
-                        </div>
-                    </a>
-                    <div class="item_header">
-                        <a href="#">Louis XVI ATHOS</a>
-                    </div>
-                    <div class="item_price">165 000 руб.</div>
-                </div>
-            </div>
-
-
-            <div>
-                <div class="products_item">
-                    <a href="#">
-                        <div class="img_wrapper">
-                            <img src="./img/card.png" alt="">
-                        </div>
-                    </a>
-                    <div class="item_header">
-                        <a href="#">Louis XVI ATHOS</a>
-                    </div>
-                    <div class="item_price">165 000 руб.</div>
-                </div>
-            </div>
-
-
-            <div>
-                <div class="products_item">
-                    <a href="#">
-                        <div class="img_wrapper">
-                            <img src="./img/card.png" alt="">
-                        </div>
-                    </a>
-                    <div class="item_header">
-                        <a href="#">Louis XVI ATHOS</a>
-                    </div>
-                    <div class="item_price">165 000 руб.</div>
-                </div>
-            </div>
-
-
-            <div>
-                <div class="products_item">
-                    <a href="#">
-                        <div class="img_wrapper">
-                            <img src="./img/card.png" alt="">
-                        </div>
-                    </a>
-                    <div class="item_header">
-                        <a href="#">Louis XVI ATHOS</a>
-                    </div>
-                    <div class="item_price">165 000 руб.</div>
-                </div>
-            </div>
-
-
         </div>
-
-    </div><!--
-        --><div class="new_collection alignHeight">
-    <div class="content">
-        <h3>Новая коллекция</h3>
-        <a href="#" class="link">Каталог</a>
+    </div><div class="new_collection alignHeight">
+        <div class="content">
+            <h3>Новая коллекция</h3>
+            <a href="#" class="link">Каталог</a>
+        </div>
     </div>
-</div>
+
 </div>
 
 <div class="third_screen">
@@ -188,7 +170,12 @@
     <div class="collection_block">
         <div class="content">
             <h3>Коллекция 2018</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut mattis habitant dui arcu. Sagittis amet nunc ut neque quis nibh arcu. Vivamus vestibulum nisi et venenatis sed scelerisque magna consectetur. Amet convallis quis gravida facilisis vulputate. Faucibus facilisi habitasse ipsum interdum dictum aliquet. Velit quis ullamcorper pulvinar nulla malesuada integer. Aenean praesent viverra nulla nullam natoque volutpat curabitur auctor. Viverra viverra ullamcorper scelerisque risus dignissim egestas. Id aliquam a aliquam egestas leo orci pharetra sed diam. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non rutrum ornare ut mattis habitant dui arcu.
+                Sagittis amet nunc ut neque quis nibh arcu. Vivamus vestibulum nisi et venenatis sed scelerisque magna
+                consectetur. Amet convallis quis gravida facilisis vulputate. Faucibus facilisi habitasse ipsum interdum
+                dictum aliquet. Velit quis ullamcorper pulvinar nulla malesuada integer. Aenean praesent viverra nulla
+                nullam natoque volutpat curabitur auctor. Viverra viverra ullamcorper scelerisque risus dignissim
+                egestas. Id aliquam a aliquam egestas leo orci pharetra sed diam. </p>
             <a href="" class="link">посмотреть коллекцию</a>
         </div>
     </div>
@@ -199,175 +186,131 @@
     <div class="wrapper">
         <h3>Новые поступления</h3>
 
-        <div class="products_list slider-2">
+        <div class="products_list swiper-container swiper-1" data-mobile="false">
 
-            <div>
-                <div class="products_item">
-                    <a href="#">
-                        <div class="img_wrapper">
-                            <img src="./img/card.png" alt="">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="products_item">
+                            <a href="#">
+                                <div class="img_wrapper">
+                                    <img src="./img/card.png" alt="">
+                                </div>
+                            </a>
+                            <div class="item_header">
+                                <a href="#">Louis XVI ATHOS</a>
+                            </div>
+                            <div class="item_price">165 000 руб.</div>
                         </div>
-                    </a>
-                    <div class="item_header">
-                        <a href="#">Louis XVI ATHOS</a>
                     </div>
-                    <div class="item_price">165 000 руб.</div>
-                </div>
-            </div>
 
 
-            <div>
-                <div class="products_item">
-                    <a href="#">
-                        <div class="img_wrapper">
-                            <img src="./img/card.png" alt="">
+                    <div class="swiper-slide">
+                        <div class="products_item">
+                            <a href="#">
+                                <div class="img_wrapper">
+                                    <img src="./img/card.png" alt="">
+                                </div>
+                            </a>
+                            <div class="item_header">
+                                <a href="#">Louis XVI ATHOS</a>
+                            </div>
+                            <div class="item_price">165 000 руб.</div>
                         </div>
-                    </a>
-                    <div class="item_header">
-                        <a href="#">Louis XVI ATHOS</a>
                     </div>
-                    <div class="item_price">165 000 руб.</div>
-                </div>
-            </div>
 
-            <div>
-                <div class="products_item">
-                    <a href="#">
-                        <div class="img_wrapper">
-                            <img src="./img/card.png" alt="">
-                        </div>
-                    </a>
-                    <div class="item_header">
-                        <a href="#">Louis XVI ATHOS</a>
-                    </div>
-                    <div class="item_price">165 000 руб.</div>
-                </div>
-            </div>
 
-            <div>
-                <div class="products_item">
-                    <a href="#">
-                        <div class="img_wrapper">
-                            <img src="./img/card.png" alt="">
+                    <div class="swiper-slide">
+                        <div class="products_item">
+                            <a href="#">
+                                <div class="img_wrapper">
+                                    <img src="./img/card.png" alt="">
+                                </div>
+                            </a>
+                            <div class="item_header">
+                                <a href="#">Louis XVI ATHOS</a>
+                            </div>
+                            <div class="item_price">165 000 руб.</div>
                         </div>
-                    </a>
-                    <div class="item_header">
-                        <a href="#">Louis XVI ATHOS</a>
                     </div>
-                    <div class="item_price">165 000 руб.</div>
-                </div>
-            </div>
 
-            <div>
-                <div class="products_item">
-                    <a href="#">
-                        <div class="img_wrapper">
-                            <img src="./img/card.png" alt="">
-                        </div>
-                    </a>
-                    <div class="item_header">
-                        <a href="#">Louis XVI ATHOS</a>
-                    </div>
-                    <div class="item_price">165 000 руб.</div>
-                </div>
-            </div>
 
-            <div>
-                <div class="products_item">
-                    <a href="#">
-                        <div class="img_wrapper">
-                            <img src="./img/card.png" alt="">
+                    <div class="swiper-slide">
+                        <div class="products_item">
+                            <a href="#">
+                                <div class="img_wrapper">
+                                    <img src="./img/card.png" alt="">
+                                </div>
+                            </a>
+                            <div class="item_header">
+                                <a href="#">Louis XVI ATHOS</a>
+                            </div>
+                            <div class="item_price">165 000 руб.</div>
                         </div>
-                    </a>
-                    <div class="item_header">
-                        <a href="#">Louis XVI ATHOS</a>
                     </div>
-                    <div class="item_price">165 000 руб.</div>
-                </div>
-            </div>
 
-            <div>
-                <div class="products_item">
-                    <a href="#">
-                        <div class="img_wrapper">
-                            <img src="./img/card.png" alt="">
-                        </div>
-                    </a>
-                    <div class="item_header">
-                        <a href="#">Louis XVI ATHOS</a>
-                    </div>
-                    <div class="item_price">165 000 руб.</div>
-                </div>
-            </div>
 
-            <div>
-                <div class="products_item">
-                    <a href="#">
-                        <div class="img_wrapper">
-                            <img src="./img/card.png" alt="">
+                    <div class="swiper-slide">
+                        <div class="products_item">
+                            <a href="#">
+                                <div class="img_wrapper">
+                                    <img src="./img/card.png" alt="">
+                                </div>
+                            </a>
+                            <div class="item_header">
+                                <a href="#">Louis XVI ATHOS</a>
+                            </div>
+                            <div class="item_price">165 000 руб.</div>
                         </div>
-                    </a>
-                    <div class="item_header">
-                        <a href="#">Louis XVI ATHOS</a>
                     </div>
-                    <div class="item_price">165 000 руб.</div>
-                </div>
-            </div>
 
-            <div>
-                <div class="products_item">
-                    <a href="#">
-                        <div class="img_wrapper">
-                            <img src="./img/card.png" alt="">
-                        </div>
-                    </a>
-                    <div class="item_header">
-                        <a href="#">Louis XVI ATHOS</a>
-                    </div>
-                    <div class="item_price">165 000 руб.</div>
-                </div>
-            </div>
 
-            <div>
-                <div class="products_item">
-                    <a href="#">
-                        <div class="img_wrapper">
-                            <img src="./img/card.png" alt="">
+                    <div class="swiper-slide">
+                        <div class="products_item">
+                            <a href="#">
+                                <div class="img_wrapper">
+                                    <img src="./img/card.png" alt="">
+                                </div>
+                            </a>
+                            <div class="item_header">
+                                <a href="#">Louis XVI ATHOS</a>
+                            </div>
+                            <div class="item_price">165 000 руб.</div>
                         </div>
-                    </a>
-                    <div class="item_header">
-                        <a href="#">Louis XVI ATHOS</a>
                     </div>
-                    <div class="item_price">165 000 руб.</div>
-                </div>
-            </div>
 
-            <div>
-                <div class="products_item">
-                    <a href="#">
-                        <div class="img_wrapper">
-                            <img src="./img/card.png" alt="">
-                        </div>
-                    </a>
-                    <div class="item_header">
-                        <a href="#">Louis XVI ATHOS</a>
-                    </div>
-                    <div class="item_price">165 000 руб.</div>
-                </div>
-            </div>
 
-            <div>
-                <div class="products_item">
-                    <a href="#">
-                        <div class="img_wrapper">
-                            <img src="./img/card.png" alt="">
+                    <div class="swiper-slide">
+                        <div class="products_item">
+                            <a href="#">
+                                <div class="img_wrapper">
+                                    <img src="./img/card.png" alt="">
+                                </div>
+                            </a>
+                            <div class="item_header">
+                                <a href="#">Louis XVI ATHOS</a>
+                            </div>
+                            <div class="item_price">165 000 руб.</div>
                         </div>
-                    </a>
-                    <div class="item_header">
-                        <a href="#">Louis XVI ATHOS</a>
                     </div>
-                    <div class="item_price">165 000 руб.</div>
+
+
+                    <div class="swiper-slide">
+                        <div class="products_item">
+                            <a href="#">
+                                <div class="img_wrapper">
+                                    <img src="./img/card.png" alt="">
+                                </div>
+                            </a>
+                            <div class="item_header">
+                                <a href="#">Louis XVI ATHOS</a>
+                            </div>
+                            <div class="item_price">165 000 руб.</div>
+                        </div>
+                    </div>
                 </div>
+
+
             </div>
 
 
@@ -380,88 +323,90 @@
     <div class="wrapper">
         <h3>Наши бренды</h3>
 
-        <div class="brand_items_list slider-3">
+        <div class="brand_items_list swiper-container swiper-3">
+            <div class="swiper-wrapper">
+                <div class="brand_item swiper-slide">
+                    <img src="./img/brand.png" alt="">
+                </div>
 
 
-            <div class="brand_item">
-                <img src="./img/brand.png" alt="">
+                <div class="brand_item swiper-slide">
+                    <img src="./img/brand.png" alt="">
+                </div>
+
+
+                <div class="brand_item swiper-slide">
+                    <img src="./img/brand.png" alt="">
+                </div>
+
+
+                <div class="brand_item swiper-slide">
+                    <img src="./img/brand.png" alt="">
+                </div>
             </div>
-
-
-            <div class="brand_item">
-                <img src="./img/brand.png" alt="">
-            </div>
-
-
-            <div class="brand_item">
-                <img src="./img/brand.png" alt="">
-            </div>
-
-
-            <div class="brand_item">
-                <img src="./img/brand.png" alt="">
-            </div>
-
-
         </div>
     </div>
 </div>
 
 <footer>
-        <div class="footer_main_block">
-           <div class="wrapper">
-                <div class="footer_container">
-                    <div class="about_magazine">
-                        <h4>О магазине</h4>
-                        <p class="about_paragraph">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh. Egestas amet consectetur vel vitae aliquam dictum suspendisse. Lobortis eget consequat, tellus et et sed turpis. Pretium quisque vitae, amet, porttitor odio ultricies massa pharetra leo. Et ipsum urna fames in sit mi ultrices nisi, nunc.
-                        </p>
-                    </div>
-                    <div class="categories">
-                        <h4>Категории</h4>
-                        <div class="categories_links">
-                            <a href="#" class="categories_link">
-                                часы
-                            </a>
-                            <a href="#" class="categories_link">
-                                браслеты
-                            </a>
-                            <a href="#" class="categories_link">
-                                ремни
-                            </a>
-                            <a href="#" class="categories_link">
-                                ювелирные изделия
-                            </a>
-                            <a href="#" class="categories_link">
-                                запонки
-                            </a>
-                        </div>
-                    </div>
-                    <div class="distribution">
-                        <h4>РАссылка</h4>
-                        <p class="distribution_paragraph">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh.
-                        </p>
-                        <div class="subscribe">
-                            <input type="email" placeholder="Ваша почта">
-                            <button>Подписаться</button>
-                        </div>
+    <div class="footer_main_block">
+        <div class="wrapper">
+            <div class="footer_container">
+                <div class="about_magazine">
+                    <h4>О магазине</h4>
+                    <p class="about_paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor
+                        lectus nunc nulla nibh. Egestas amet consectetur vel vitae aliquam dictum suspendisse. Lobortis
+                        eget consequat, tellus et et sed turpis. Pretium quisque vitae, amet, porttitor odio ultricies
+                        massa pharetra leo. Et ipsum urna fames in sit mi ultrices nisi, nunc.
+                    </p>
+                </div>
+                <div class="categories">
+                    <h4>Категории</h4>
+                    <div class="categories_links">
+                        <a href="#" class="categories_link">
+                            часы
+                        </a>
+                        <a href="#" class="categories_link">
+                            браслеты
+                        </a>
+                        <a href="#" class="categories_link">
+                            ремни
+                        </a>
+                        <a href="#" class="categories_link">
+                            ювелирные изделия
+                        </a>
+                        <a href="#" class="categories_link">
+                            запонки
+                        </a>
                     </div>
                 </div>
-           </div>
-        </div>
-        <div class="footer_copyright">
-            <div class="wrapper">
-                <div class="align_block">
-                    <span>&copy; 2020 Все права защищены</span>
-                    <span class="footer_copyright_text">Сделано Figma.info</span>
+                <div class="distribution">
+                    <h4>РАссылка</h4>
+                    <p class="distribution_paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor
+                        lectus nunc nulla nibh.
+                    </p>
+                    <div class="subscribe">
+                        <input type="email" placeholder="Ваша почта">
+                        <button>Подписаться</button>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="footer_copyright">
+        <div class="wrapper">
+            <div class="align_block">
+                <span>&copy; 2020 Все права защищены</span>
+                <span class="footer_copyright_text">Сделано Figma.info</span>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <script src="js/libs/jq.min.js"></script>
-<script src="js/libs/slick/slick.min.js"></script>
+<script src="js/libs/swipper/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

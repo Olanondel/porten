@@ -1,53 +1,73 @@
 $(document).ready(function () {
 
-    $(window).resize(function () { // $(window).width() < 769 &&
+    const slider = document.querySelector('.swiper-1')
+    let mySwipper
 
-        if (!$('.slider-2').hasClass('slick-initialized') && $(window).width() < 769) {
-            $('.new_items_screen .products_list').slick({
-                arrows: false,
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                autoplay: true,
-                mobileFirst: true,
-                autoplaySpeed: 2000,
-                speed: 1500,
-                responsive: [
-                    {
-                        breakpoint: 769,
-                        settings: 'unslick'
-                    },
-                    {
-                        breakpoint: 520,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3
-                        }
-                    },
-                    {
-                        breakpoint: 100,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
+    function mobileSlider() {
+        if (window.innerWidth <= 640 && slider.dataset.mobile === 'false') {
+            mySwiper = new Swiper(slider, {
+                loop: true,
+                slidesPerView: 2,
+                centeredSlides: true,
+                spaceBetween: 40,
+                breakpoints: {
+                    640: {
+                        enabled: false,
+                        slidesPerView: 4
                     }
-                ]
+                }
+            })
+
+            slider.dataset.mobile = 'true'
+        }
+
+        if (window.innerWidth > 640) {
+            slider.dataset.mobile = 'false'
+
+            if(slider.classList.contains('swiper-container-initialized')) {
+                mySwiper.destroy();
+            }
+
+        }
+    }
+
+    mobileSlider()
+
+    $(window).resize(function () {
+
+        mobileSlider()
+
+        if (!$('.products_list').hasClass('swiper-container-initialized') && $(window).width() < 640) {
+            const newSeason = new Swiper('.swiper-container', {
+                loop: true,
+                slidesPerView: 1.9,
+                centeredSlides: true,
+                spaceBetween: 45,
+                breakpoints: {
+                    640: {
+                        enabled: false,
+                        slidesPerView: 3
+                    }
+                }
             })
         }
 
-        if (!$('.slider-3').hasClass('slick-initialized') && $(window).width() < 620) {
-            $('.brand_items_list').slick({
-                arrows: false,
-                slidesToShow: 1,
-                autoplay: true,
-                mobileFirst: true,
-                autoplaySpeed: 2000,
-                speed: 1500,
-                responsive: [
-                    {
-                        breakpoint: 620,
-                        settings: 'unslick'
+        if (!$('.swiper-3').hasClass('swiper-container-initialized') && $(window).width() < 768) {
+            const brands = new Swiper('.swiper-3', {
+                slidesPerView: 1,
+                loop: true,
+                breakpoints: {
+                    580: {
+                        enabled: true,
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        enabled: false,
+                        slidesPerView: 4,
+                        spaceBetween: 20,
                     }
-                ]
+                }
             })
         }
 
@@ -55,7 +75,7 @@ $(document).ready(function () {
 
     $('.burger_btn').click(function (e) {
         e.preventDefault()
-        $('.nav').slideToggle(450, function () {
+        $('.main_nav').slideToggle(450, function () {
             if ($(this).css('display') === 'none') {
                 $(this).removeAttr('style')
             }
@@ -63,103 +83,39 @@ $(document).ready(function () {
         $('nav').toggleClass('burgerToggle')
     })
 
-    //
-
-    $('.new_season .products_list').slick({
-        arrows: false,
-        slidesToScroll: 3,
-        autoplay: false,
-        autoplaySpeed: 2000,
-        speed: 1500,
-        slidesToShow: 3,
-        mobileFirst: true,
-        responsive: [
-            {
-                breakpoint: 1680,
-                settings: {
-                    slidesToShow: 5,
-                    slidesToScroll: 5
-                }
+    const newSeason = new Swiper('.swiper-0', {
+        loop: true,
+        slidesPerView: 2,
+        centeredSlides: true,
+        spaceBetween: 40,
+        breakpoints: {
+            640: {
+                enabled: false,
+                slidesPerView: 3
             },
-            {
-                breakpoint: 1400,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4
-                }
-            },
-            {
-                breakpoint: 960,
-                settings: {
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 800,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4
-                }
-            },
-            {
-                breakpoint: 520,
-                settings: {
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 100,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
+            960: {
+                enabled: false,
+                slidesPerView: 3,
+                spaceBetween: 20,
             }
-        ]
+        }
     })
 
-    $('.new_items_screen .products_list').slick({
-        arrows: false,
-        slidesToShow: 3,
-      slidesToScroll: 3,
-        autoplay: true,
-        mobileFirst: true,
-        autoplaySpeed: 2000,
-        speed: 1500,
-        responsive: [
-            {
-                breakpoint: 769,
-                settings: 'unslick'
+    const brands = new Swiper('.swiper-3', {
+        slidesPerView: 1,
+        loop: true,
+        breakpoints: {
+            580: {
+                enabled: true,
+                slidesPerView: 2,
+                spaceBetween: 20,
             },
-            {
-                breakpoint: 520,
-                settings: {
-                    slidesToShow: 3,
-                  slidesToScroll: 3
-                }
-            },
-            {
-                breakpoint: 100,
-                settings: {
-                    slidesToShow: 1,
-                  slidesToScroll: 1
-                }
+            768: {
+                enabled: false,
+                slidesPerView: 4,
+                spaceBetween: 20,
             }
-        ]
-    })
-
-    $('.brand_items_list').slick({
-        arrows: false,
-        slidesToShow: 1,
-        autoplay: true,
-        mobileFirst: true,
-        autoplaySpeed: 2000,
-        speed: 1500,
-        responsive: [
-            {
-                breakpoint: 620,
-                settings: 'unslick'
-            }
-        ]
+        }
     })
 
 })
