@@ -7,13 +7,17 @@ $(document).ready(function () {
         if (window.innerWidth <= 640 && slider.dataset.mobile === 'false') {
             mySwiper = new Swiper(slider, {
                 loop: true,
-                slidesPerView: 2,
+                slidesPerView: 1.8,
                 centeredSlides: true,
                 spaceBetween: 40,
                 breakpoints: {
-                    640: {
-                        enabled: false,
-                        slidesPerView: 4
+                    480: {
+                        slidesPerView: 1.9,
+                        spaceBetween: 70,
+                    },
+                    520: {
+                        slidesPerView: 2.3,
+                        spaceBetween: 50,
                     }
                 }
             })
@@ -37,20 +41,38 @@ $(document).ready(function () {
 
         mobileSlider()
 
-        if (!$('.products_list').hasClass('swiper-container-initialized') && $(window).width() < 640) {
-            const newSeason = new Swiper('.swiper-container', {
-                loop: true,
-                slidesPerView: 1.9,
-                centeredSlides: true,
-                spaceBetween: 45,
-                breakpoints: {
-                    640: {
-                        enabled: false,
-                        slidesPerView: 3
-                    }
+        const newSeason = new Swiper('.swiper-0', {
+            loop: true,
+            slidesPerView: 1.8,
+            centeredSlides: true,
+            spaceBetween: 20,
+            breakpoints: {
+                480: {
+                    slidesPerView: 1.8,
+                    spaceBetween: 40,
+                },
+                520: {
+                    slidesPerView: 2.2,
+                    spaceBetween: 50,
+                },
+                640: {
+                    enabled: false,
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                    spaceBetween: 50,
+                },
+                960: {
+                    enabled: false,
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1280: {
+                    enabled: false,
+                    slidesPerView: 3,
+                    spaceBetween: 60,
                 }
-            })
-        }
+            }
+        })
 
         if (!$('.swiper-3').hasClass('swiper-container-initialized') && $(window).width() < 768) {
             const brands = new Swiper('.swiper-3', {
@@ -85,18 +107,36 @@ $(document).ready(function () {
 
     const newSeason = new Swiper('.swiper-0', {
         loop: true,
-        slidesPerView: 2,
+        slidesPerView: 1.8,
         centeredSlides: true,
         spaceBetween: 40,
         breakpoints: {
+            400: {
+                slidesPerView: 1.8,
+                spaceBetween: 60,
+            },
+            480: {
+                slidesPerView: 1.8,
+                spaceBetween: 60,
+            },
+            520: {
+                slidesPerView: 2.2,
+                spaceBetween: 50,
+            },
             640: {
                 enabled: false,
-                slidesPerView: 3
+                slidesPerView: 3,
+                spaceBetween: 70,
             },
             960: {
                 enabled: false,
                 slidesPerView: 3,
                 spaceBetween: 20,
+            },
+            1280: {
+                enabled: false,
+                slidesPerView: 3,
+                spaceBetween: 60,
             }
         }
     })

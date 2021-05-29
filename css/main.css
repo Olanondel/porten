@@ -198,8 +198,8 @@ input, button {
 }
 
 .swiper-1 .swiper-slide {
-    width: 25%;
-    padding: 10px;
+    padding: 0 10px;
+    flex: 0 1 25%;
 }
 
 .new_season .products_item {
@@ -258,7 +258,7 @@ input, button {
     justify-content: center;
     align-items: center;
     background: #191B1C;
-    padding: 55px 22px;
+    padding: 56px 2px;
     margin-bottom: 20px;
 }
 
@@ -734,7 +734,7 @@ footer h4 {
     }
 
     .new_items_screen .products_item {
-        margin-bottom: 0;
+        margin-bottom: 40px;
     }
 }
 
@@ -858,8 +858,20 @@ footer h4 {
     }
 
     .swiper-1 .swiper-slide {
-        width: 25%;
-        padding: 10px;
+        flex: 1 0 auto;
+        padding: 0;
+    }
+
+    .new_items_screen .products_item {
+        margin-bottom: 0px;
+    }
+
+    .new_items_screen .wrapper {
+        padding: 0 0 0;
+    }
+
+    .new_season {
+        padding: 4% 0 6%;
     }
 
 }
@@ -943,7 +955,7 @@ footer h4 {
 
     .new_season {
         min-height: 48vh;
-        padding: 8% 20px 10%
+        padding: 8% 0 10%
     }
 
     .new_collection {
@@ -965,6 +977,10 @@ footer h4 {
 
     .new_items_screen {
         min-height: 42vh;
+        padding: 8% 0 10%;
+    }
+
+    .new_items_screen .wrapper {
         padding: 8% 0 10%;
     }
 
